@@ -3,6 +3,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Brand Colors */
+  --lavender: #E8E6FA;
+  --deep-purple: #6A5ACD;
+  --navy: #1E1A3D;
+  --charcoal: #2B2B2B;
+
+  --gray-light: #f3f3f3;
+  --gray-medium: #cfcfcf;
+
+  /* Fonts from layout.tsx */
+  --font-sans: var(--font-poppins);
+  --font-mono: var(--font-geist-mono);
 }
 
 @theme inline {
@@ -14,13 +27,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #fff;
+    --foreground: #171717;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins, Helvetica, sans-serif;
 }
